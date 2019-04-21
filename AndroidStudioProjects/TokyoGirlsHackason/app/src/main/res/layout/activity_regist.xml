@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.mt.myapplication.RegistActivity">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:text="服のカテゴリーを選択してください"
+            tools:layout_editor_absoluteX="-85dp"
+            tools:layout_editor_absoluteY="-36dp" />
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="2">
+
+        <RadioGroup
+            android:id="@+id/RadioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:id="@+id/RadioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="ワンピース（長袖）" />
+
+            <RadioButton
+                android:id="@+id/RadioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:text="ワンピース（半袖）" />
+
+            <RadioButton
+                android:id="@+id/RadioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="ジャケット"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="76dp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="コート"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="27dp" />
+
+
+            <RadioButton
+                android:id="@+id/RadioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="半袖tシャツ"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="331dp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="長袖tシャツ"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="285dp" />
+
+
+            <RadioButton
+                android:id="@+id/RadioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ノースリーブ"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="381dp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="カーディガン(薄手)" />
+
+            <RadioButton
+                android:id="@+id/RadioButton8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="カーディガン(厚手)"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="239dp" />
+
+
+            <RadioButton
+                android:id="@+id/RadioButton10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ズボン（薄手）" />
+
+            <RadioButton
+                android:id="@+id/RadioButton9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ズボン（厚手）" />
+
+
+            <RadioButton
+                android:id="@+id/RadioButton12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ショートパンツ" />
+
+            <RadioButton
+                android:id="@+id/RadioButton11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ロングスカート" />
+
+
+            <RadioButton
+                android:id="@+id/RadionButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ミニスカート" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="regist"
+                android:text="登録" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="nextRegist"
+                    android:text="他の服を登録" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="goMenu"
+                    android:text="メニューへ戻る" />
+            </LinearLayout>
+        </RadioGroup>
+
+    </TableLayout>
+
+
+</LinearLayout>
+

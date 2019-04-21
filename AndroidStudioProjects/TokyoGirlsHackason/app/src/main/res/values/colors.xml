@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#667fff </color>
+    <color name="colorPrimaryDark">#302ea5 </color>
+    <color name="colorAccent">#77a7f9 </color>
+    <color name="colorBackGround">#b8c4f9</color>
+    <color name="ButtonBackground">#eaecff </color>
+    <color name="WakuColor">#d8ccc7 </color>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TokyoGirlsHackason</string>
+
+    <string-array name="list">
+        <item>晴れ</item>
+        <item>晴れのち曇り</item>
+        <item>曇り</item>
+        <item>雨</item>
+        <item>雪</item>
+    </string-array>
+
+</resources>

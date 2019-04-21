@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:onClick="selectAtsugariOrSamugari"
+    android:orientation="vertical"
+    tools:context="to.msn.wings.tokyogirlshackason.SettingActivity">
+
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/frame_style"
+        android:fontFamily="sans-serif"
+        android:onClick="selectAtsugariOrSamugari"
+        android:text="暑がり or 寒がり設定"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/frame_style"
+        android:onClick="selectRegist"
+        android:text="持ってる服の登録"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/frame_style"
+        android:onClick="selectClothes"
+        android:text="服を決める"
+        tools:background="@color/ButtonBackground" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/frame_style"
+        android:onClick="selectHansei"
+        android:text="今日の反省" />
+
+</LinearLayout>
